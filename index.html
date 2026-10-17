@@ -84,6 +84,13 @@
       letter-spacing: .01em;
     }
     .tool-button { cursor: pointer; }
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .home-link:active { background: rgba(255,255,255,.13); }
     .tool-button:active { background: rgba(255,255,255,.13); }
     .tool-button:disabled { opacity: .42; cursor: default; }
     .draw-wrap { margin-left: auto; position: relative; }
@@ -301,6 +308,7 @@
     <div class="toolbar" aria-label="Game controls">
       <button class="tool-button" id="newGame" type="button">New deal</button>
       <button class="tool-button" id="undo" type="button" disabled>Undo</button>
+      <a class="tool-button home-link" href="https://jesuslovestyler.com/">⌂ Home</a>
       <div class="draw-wrap">
         <select id="drawMode" class="draw-select" aria-label="Cards drawn from stock">
           <option value="1">Draw 1</option>
@@ -836,5 +844,6 @@
     newGame();
   }());
   </script>
+  <script data-goatcounter="https://jesuslovestyler.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
